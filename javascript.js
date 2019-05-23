@@ -281,6 +281,16 @@ console.log(user);
 // En el objeto tenemos dos propiedades: firstName y lastName
 // Por un cambio en los requerimientos del proyecto, necesitamos que el nombre sea un objeto con el siguiente formato:
 
+
+var user = {
+  name: {
+    first: 'Grace',
+    last: 'Hopper'
+  },
+  // y las demas propiedades
+}
+
+
 var user = {
   id: 123456789,
   firstName: 'Ada',
@@ -289,14 +299,16 @@ var user = {
   skills: ['HTML', 'CSS', 'SASS', 'JS']
 };
 
-var newUser = { 
-	first: 'Grace',
+
+var newUser = {
+	name: {
+    first: 'Grace',
     last: 'Hopper'
-  
+    },
+
 };
 
-first = user.firstName ;
-last = user.lastName ;
+
 // despues de la solucion
 console.log(newUser);
 console.log(user);
